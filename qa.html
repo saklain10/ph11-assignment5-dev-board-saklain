@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Answer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="w-11/12 mx-auto">
+    <header class="my-5">
+        <div class="navbar bg-base-100 shadow-sm rounded-md flex justify-between text-center items-center">
+            <div class="flex">
+                <div>
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <div class="flex-1">
+                    <a class="btn btn-ghost text-xl">Dev<span class="font-bold">Board</span></a>
+                </div>
+            </div>
+            <div class="mr-4">
+                <button id="desk-back-btn" class="btn btn-primary">Back to Desk</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="text-center text-xl font-bold">Blogs</h1>
+
+        <div class="grid gap-4 pb-4">
+            <div class="qa-1 p-4 shadow-lg">
+                <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?
+                </h1>
+                <div class="border-t border-dashed border-gray-300 my-2"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
+                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
+                    perspiciatis magnam et?</p>
+            </div>
+            <div class="qa-1 p-4 shadow-lg">
+                <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+                <div class="border-t border-dashed border-gray-300 my-2"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
+                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
+                    perspiciatis magnam et?</p>
+            </div>
+
+            <div class="qa-1 p-4 shadow-lg">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?
+                </h1>
+                <div class="border-t border-dashed border-gray-300 my-2"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
+                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
+                    perspiciatis magnam et?</p>
+            </div>
+            <div class="qa-1 p-4 shadow-lg">
+                <h1 class="font-bold">Question-4: What is event bubbling in the DOM?
+                </h1>
+                <div class="border-t border-dashed border-gray-300 my-2"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
+                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
+                    perspiciatis magnam et?</p>
+            </div>
+            <div class="qa-1 p-4 shadow-lg">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
+                <div class="border-t border-dashed border-gray-300 my-2"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
+                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
+                    perspiciatis magnam et?</p>
+            </div>
+
+
+        </div>
+
+        <script>
+            document.getElementById("desk-back-btn").addEventListener('click', function(){
+                window.location.href = "index.html"
+            })
+        </script>
+    </main>
+</body>
+
+</html>

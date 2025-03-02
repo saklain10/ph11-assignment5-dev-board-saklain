@@ -37,7 +37,7 @@ document.getElementById("card-button1").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading1.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -58,7 +58,7 @@ document.getElementById("card-button2").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading2.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -79,7 +79,7 @@ document.getElementById("card-button3").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading3.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -100,7 +100,7 @@ document.getElementById("card-button4").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading4.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -121,7 +121,7 @@ document.getElementById("card-button5").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading5.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -142,7 +142,7 @@ document.getElementById("card-button6").addEventListener("click", function () {
     div.innerText = `You have completed the task ${cardHeading6.innerText} at ${liveTime()}`
     messageContainer.appendChild(div)
 
-    // **Updating UI using `setInnerTextById`**
+    
     setInnerTextById("finished-task", finishedTask + 1);
     setInnerTextById("assigned-tasked", assignedTasked - 1);
 
@@ -160,117 +160,3 @@ document.getElementById("btnClearHistory").addEventListener("click",function(){
 
 
 
-// function liveTime() {
-//     const time = new Date()
-//     return time.toLocaleTimeString();
-// }
-
-// function checkAllTaskCompletion() {
-//     const assignedTasked = getInnerTextById("assigned-tasked")
-
-//     if (assignedTasked === 0) {
-//         alert("congrats!!! you have complete all current task")
-//     }
-// }
-
-// document.getElementById("card-button1").addEventListener('click', function () {
-//     this.disabled = true;
-
-//     const finishedTask = getInnerTextById("finished-task")
-//     const assignedTasked = getInnerTextById("assigned-tasked")
-
-//     alert("Board Updated Successfully")
-
-//     // setInnerTextById("finished-task", finishedTask + 1);
-//     // setInnerTextById("assigned-tasked", assignedTasked - 1);
-
-//     finishedTask = finishedTask + 1;
-//     assignedTasked = assignedTasked - 1;
-//     checkAllTaskCompletion()
-// })
-
-
-
-
-
-// document.getElementById("card-button1").addEventListener("click", function () {
-//     const finishedTask = getInnerTextById("finished-task")
-//     console.log(finishedTask)
-// })
-
-// document.getElementById("card-button1").addEventListener("click", function () {
-//     const assignedTasked = getInnerTextById("assigned-tasked")
-//     console.log(assignedTasked)
-// })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // const buttons = document.querySelectorAll(".btn.btn-primary")
-
-// // buttons.forEach(button => {
-// //     button.addEventListener('click', function () {
-// //         // const finishedTask = getInnerTextById("finished-task")
-// //         // const assignedTasked = getInnerTextById("assigned-tasked")
-
-// //         let finishedTask = document.getElementById("finished-task");
-// //         let currentFinishedTask = parseInt(finishedTask.innerText);
-// //         let assignedTasked = document.getElementById("numberDec");
-// //         let currentAssignedTask = parseInt(assignedTasked.innerText);
-
-// //         finishedTask.innerText = currentFinishedTask + 1
-// //         assignedTasked.innerText = currentAssignedTask - 1
-
-
-// //     })
-// // })
-
-
-
-
-// const buttons = document.querySelectorAll(".btn.btn-primary");
-
-//         buttons.forEach(button => {
-//             button.addEventListener('click', function () {
-//                 let finishedTask = document.getElementById("finished-task");
-//                 let currentFinishedTask = parseInt(finishedTask.innerText);
-//                 let assignedTasked = document.getElementById("numberDec");
-//                 let currentAssignedTask = parseInt(assignedTasked.innerText);
-
-//                 finishedTask.innerText = currentFinishedTask + 1
-//                 assignedTasked.innerText = currentAssignedTask - 1
-//             })
-//         })
-
-
-
-// console.log(btnCompleted)

@@ -48,9 +48,13 @@
                 </h1>
                 <div class="border-t border-dashed border-gray-300 my-2"></div>
                 <p>The difference between innerHTML, innerText, and textContent:
-                    <li>innerHTML: innerHTML set or get the inner content of an HTML element. when use this then the tags, content, hidden element all are showing.</li>
-                    <li>innerText: innerText return the text content. when use this it will show all the visible text among the tags. Except the input field , inner text is used to get the text content for all the field</li>
-                    <li>textContent: Without the html tag all the visible and hidden text gets and takes by textContent.</li>
+                    <li>innerHTML: innerHTML set or get the inner content of an HTML element. when use this then the
+                        tags, content, hidden element all are showing.</li>
+                    <li>innerText: innerText return the text content. when use this it will show all the visible text
+                        among the tags. Except the input field , inner text is used to get the text content for all the
+                        field</li>
+                    <li>textContent: Without the html tag all the visible and hidden text gets and takes by textContent.
+                    </li>
                 </p>
             </div>
 
@@ -58,24 +62,49 @@
                 <h1 class="font-bold">Question-3: What is event delegation in the DOM?
                 </h1>
                 <div class="border-t border-dashed border-gray-300 my-2"></div>
-                <p>DOM-এ Event Delegation হল এমন একটি কৌশল যা Event Bubbling করার পদ্ধতির সাহায্যে ইভেন্টগুলিকে দক্ষতার সাথে পরিচালনা করে। একাধিক child উপাদানের সাথে ইভেন্ট Listener সংযুক্ত করার পরিবর্তে, একটি সাধারণ parent উপাদানের সাথে একটি একক ইভেন্ট Listener কে সংযুক্ত করা যায়৷ dynamic content নিয়ে কাজ করার সময় event delegation বিশেষভাবে কার্যকর, কারণ এটি অতিরিক্ত ইভেন্ট listener প্রয়োজন ছাড়াই স্বয়ংক্রিয়ভাবে নতুন যোগ করা child উপাদানগুলি পরিচালনা করে। ইভেন্ট ডেলিগেশন ব্যবহার করে, ক্লিনার, আরও দক্ষ এবং সহজে রক্ষণাবেক্ষণের কোড লিখা যায়।
+                <p>DOM-এ Event Delegation হল এমন একটি কৌশল যা Event Bubbling করার পদ্ধতির সাহায্যে ইভেন্টগুলিকে দক্ষতার
+                    সাথে পরিচালনা করে। একাধিক child উপাদানের সাথে ইভেন্ট Listener সংযুক্ত করার পরিবর্তে, একটি সাধারণ
+                    parent উপাদানের সাথে একটি একক ইভেন্ট Listener কে সংযুক্ত করা যায়৷ dynamic content নিয়ে কাজ করার
+                    সময় event delegation বিশেষভাবে কার্যকর, কারণ এটি অতিরিক্ত ইভেন্ট listener প্রয়োজন ছাড়াই
+                    স্বয়ংক্রিয়ভাবে নতুন যোগ করা child উপাদানগুলি পরিচালনা করে। ইভেন্ট ডেলিগেশন ব্যবহার করে, ক্লিনার,
+                    আরও দক্ষ এবং সহজে রক্ষণাবেক্ষণের কোড লিখা যায়।
                 </p>
             </div>
             <div class="qa-1 p-4 shadow-lg">
                 <h1 class="font-bold">Question-4: What is event bubbling in the DOM?
                 </h1>
                 <div class="border-t border-dashed border-gray-300 my-2"></div>
-            <p>
-                
-            </p>
+                <p>
+                    Event bubbling in the DOM is like a ripple effect in water. When we throw a pebble into a pond, the
+                    ripples spread outward from where the pebble lands. Like that, when an event like a click happens on
+                    a specific element, it starts from that element and then "bubbles up" to its parent elements, one by
+                    one, until it reaches the top of the DOM tree. For example, if we click a button inside a div, the
+                    click event will first trigger on the button, then the div, and then any other parent elements, all
+                    the way up to the document's root. This allows us to handle events more efficiently by adding a
+                    single event listener to a parent element, which can then manage the events of its child elements.
+
+
+                </p>
             </div>
             <div class="qa-1 p-4 shadow-lg">
                 <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
                 </h1>
                 <div class="border-t border-dashed border-gray-300 my-2"></div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel velit dolorem itaque iste dolores
-                    praesentium, rem minus accusamus voluptatum officiis sunt magni optio fugit eum officia iure
-                    perspiciatis magnam et?</p>
+                <p>
+                    To create a new element, We can use the document.createElement method.
+                    let newElement = document.createElement('div');
+                    let parentElement = document.getElementById('parent')
+                    let referenceElement = document.getElementById('reference')
+
+                    Removing an Element:
+                    parentElement.removeChild(newElement)
+
+                    Create a new element:
+                    let newElement = document.createElement('div');
+                    newElement.textContent = 'Hello World!'
+
+                    
+                </p>
             </div>
 
 
